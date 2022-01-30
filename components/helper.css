@@ -1,0 +1,94 @@
+@import url(./components/Avatar/avatar.css);
+
+:root {
+  --primary-color: #ff3b30;
+  --secondary-color: #fff6ea;
+  --action-color: #3b82f6;
+  --grey-color: #9a9a9a;
+  --black-color: #282828;
+  --white-color: #ffffff;
+  --lynxwhite-color: #f7f7f7;
+  --violet-color: #5348c7;
+  --lynxgray-color: #c5c5c5;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 16px is assumed */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 50vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.component-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: fit-content;
+  width: 80%;
+  margin: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+.round-corner-sm {
+  border-radius: 0.5em;
+}
+
+.round-corner-md {
+  border-radius: 1em;
+}
+
+.round-corner-lg {
+  border-radius: 1.5em;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+@media only screen and (min-width: 480px) {
+  /* Mobile */
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Phablet */
+  html {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Laptop */
+  html {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  /* Desktop */
+  html {
+    font-size: 150%;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  /* Humungosaur */
+  html {
+    font-size: 200%;
+  }
+}
