@@ -2,6 +2,8 @@
 @import url(./components/Avatar/avatar.css);
 @import url(./components/Alerts/alerts.css);
 
+@import url(./components/Badges/badges.css);
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 16px is assumed */
@@ -40,6 +42,12 @@ main {
   grid-template-columns: 1fr 2fr;
   place-items: center;
 }
+
+li {
+  padding: 1rem;
+  width: 150%;
+}
+
 
 @media only screen and (max-width: 480px) {
   /* Mobile */
