@@ -7,6 +7,27 @@
   border-radius: 0.5rem;
 }
 
+.btn-info {
+  background-color: var(--info-color);
+}
+
+.btn-success {
+  background-color: var(--success-color);
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: var(--highlight-color);
+}
+
 .btn-sm {
   font-size: 1.2rem;
   min-width: 2rem;
@@ -33,23 +54,20 @@
   opacity: 0.5;
 }
 
-.btn-info {
+.btn-link {
   background-color: var(--info-color);
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  text-underline-offset: 0.2rem;
 }
 
-.btn-success {
-  background-color: var(--success-color);
+.btn-link-disabled {
+  pointer-events: none;
+  text-decoration: none;
+  opacity: 0.5;
 }
 
-.btn-warning {
-  background-color: var(--warning-color);
-}
-
-.btn-danger {
-  background-color: var(--danger-color);
-}
-
-.btn-transparent {
-  background-color: transparent;
-  color: var(--highlight-color);
+.btn-icon{
+  padding: 0.8rem;
 }
