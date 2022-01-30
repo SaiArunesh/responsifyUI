@@ -1,0 +1,23 @@
+.component-container {
+  align-items: center;
+}
+
+.avatar-container {
+  /* Enlarging for better visualising 
+   override to multiply/divide size of all avatars */
+  font-size: 2rem;
+}
+
+.avatar-sm {
+  width: 2.4em;
+  height: 2.4em;
+}
+
+.avatar-md {
+  width: 3.2em;
+  height: 3.2em;
+}
+.avatar-lg {
+  width: 4.8em;
+  height: 4.8em;
+}
