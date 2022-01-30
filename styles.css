@@ -19,6 +19,7 @@ html {
   border-radius: 1.5rem;
   padding: 1.5rem;
   gap: 1.6rem;
+  max-width: 80vw;
 }
 
 .round-corner-sm {
@@ -43,9 +44,13 @@ main {
   place-items: center;
 }
 
+ul{
+  max-width: 80vw;
+}
+
 li {
   padding: 1rem;
-  width: 150%;
+  width: 100%;
 }
 
 
