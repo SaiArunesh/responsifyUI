@@ -1,19 +1,102 @@
+@import url(./components/Avatar/avatar.css);
+
+:root {
+  --primary-color: #ff3b30;
+  --secondary-color: #fff6ea;
+  --action-color: #3b82f6;
+  --grey-color: #9a9a9a;
+  --black-color: #282828;
+  --white-color: #ffffff;
+  --lynxwhite-color: #f7f7f7;
+  --violet-color: #5348c7;
+  --lynxgray-color: #c5c5c5;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 16px is assumed */
+  font-family: "Poppins", sans-serif;
+}
+
+.component-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  gap:1.6rem;
+}
+
+.round-corner-sm {
+  border-radius: 0.5em;
+}
+
+.round-corner-md {
+  border-radius: 1em;
+}
+
+.round-corner-lg {
+  border-radius: 1.5em;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  place-items: center;
 }
 
-.main-grid {
-    width: 100vw;
+@media only screen and (max-width: 480px) {
+  /* Mobile */
+  html {
+    font-size: 50%;
+  }
+  main{
+    grid-template-columns: 1fr;
+
+  }
+  .side-grid {
+    display: none;
+  }
+  .main-grid {
+    margin: 0 auto;
+  }
 }
 
-iframe {
-  width: 90%;
-  min-height: 20rem;
+@media only screen and (min-width: 768px) {
+  /* Phablet */
+  html {
+    font-size: 80%;
+  }
 }
 
-@media only screen and (max-width: 640px) {
-    .side-grid{
-        display:none;
-    }
+@media only screen and (min-width: 1024px) {
+  /* Laptop */
+  html {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  /* Desktop */
+  html {
+    font-size: 150%;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  /* Humungosaur */
+  html {
+    font-size: 150%;
+  }
 }
