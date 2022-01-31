@@ -1,0 +1,57 @@
+@import url("../globals.css");
+input {
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+input:focus {
+  outline: 2px solid var(--info-color);
+}
+
+.input-focus {
+  outline: 2px solid var(--info-color); /*just for demo*/
+}
+
+.input-valid {
+  outline: 2px solid var(--success-color);
+}
+
+.input-invalid {
+  outline: 2px solid var(--warning-color);
+}
+
+.input-with-status-icon {
+  position: relative;
+}
+
+.input-status {
+  position: absolute;
+  font-size: 1.6rem;
+  right: 0.5rem;
+  top: 1rem;
+}
+
+.input-status-valid {
+  color: var(--success-color);
+}
+
+.input-status-invalid {
+  color: var(--danger-color);
+}
+
+.input-resizable { /*Expands to width specified*/
+  width: 30rem;
+  max-width: 95%;
+}
+
+.input-resizable > input {
+  box-sizing: border-box;
+  max-width: inherit;
+  width: 100%;
+}
