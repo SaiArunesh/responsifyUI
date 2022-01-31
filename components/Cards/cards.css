@@ -143,3 +143,30 @@
 .white-text {
   color: white;
 }
+
+/* Card without Description*/
+
+.card-small {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.5rem;
+    min-width: 35rem;
+    height: fit-content;
+    margin: 2rem;
+  }
+  
+  .card-small > .card-header {
+    flex-direction: row;
+    width: 100%;
+    min-height: 11rem;
+  }
+  
+  .card-small-image {
+    max-width: 11rem;
+  }
+  
+  .card-small > .card-footer {
+    padding-top: 0.6rem;
+  }
+  
