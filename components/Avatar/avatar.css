@@ -7,7 +7,10 @@
 .avatar-container {
   /* Enlarging for better visualising 
    override to multiply/divide size of all avatars */
-  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
 }
 
 .avatar-sm {
