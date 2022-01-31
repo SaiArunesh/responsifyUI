@@ -147,26 +147,34 @@
 /* Card without Description*/
 
 .card-small {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 0.5rem;
-    min-width: 35rem;
-    height: fit-content;
-    margin: 2rem;
-  }
-  
-  .card-small > .card-header {
-    flex-direction: row;
-    width: 100%;
-    min-height: 11rem;
-  }
-  
-  .card-small-image {
-    max-width: 11rem;
-  }
-  
-  .card-small > .card-footer {
-    padding-top: 0.6rem;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.5rem;
+  min-width: 35rem;
+  height: fit-content;
+  margin: 2rem;
+}
+
+.card-small > .card-header {
+  flex-direction: row;
+  width: 100%;
+  min-height: 11rem;
+}
+
+.card-small-image {
+  max-width: 11rem;
+}
+
+.card-small > .card-footer {
+  padding-top: 0.6rem;
+}
+
+.card-dark-shadow {
+  box-shadow: 0 0 10px black;
+}
+
+
+.card-light-shadow {
+  box-shadow: 0 0 10px var(--lynxwhite-color);
+}
