@@ -3,7 +3,7 @@
 @import url(./components/Alerts/alerts.css);
 @import url(./components/Badges/badges.css);
 @import url(./components/Cards/cards.css);
-@import url(./components/Input/input.css);
+@import url(./components/input/input.css);
 
 html {
   box-sizing: border-box;
