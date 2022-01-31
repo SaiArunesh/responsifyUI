@@ -176,5 +176,5 @@
 
 
 .card-light-shadow {
-  box-shadow: 0 0 10px var(--lynxwhite-color);
+  box-shadow: 0 0 1rem var(--lynxwhite-color);
 }
