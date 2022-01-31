@@ -77,7 +77,7 @@
   text-transform: uppercase;
   border: 0;
   padding: 1rem 0.5rem;
-  color: #6200ee;
+  color: var(--info-color);
   background-color: white;
   font-weight: 700;
   letter-spacing: 0.2rem;
@@ -86,7 +86,8 @@
 }
 
 .card-button:hover {
-  background-color: rgba(98, 0, 238, 0.05);
+  background-color: var(--info-color);
+  color: white;
   cursor: pointer;
 }
 
@@ -107,12 +108,24 @@
   justify-content: center;
   width: 4.4rem;
   height: 4.4rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
   background-color: white;
   color: black;
 }
 
 .card-footer-icons .btn-icon:hover {
-  background-color: #f8f4ec;
+  background-color: var(--info-color);
+  color: white;
   border-radius: 50%;
+  font-size: 1.9rem;
+}
+
+.card-dismiss {
+  position: absolute;
+  font-size: 1.9rem;
+  background-color: white;
+  color: var(--info-color);
+  right:0rem;
+  top:-0rem;
+  border-radius:0rem 0rem 0rem 0.5rem;
 }
