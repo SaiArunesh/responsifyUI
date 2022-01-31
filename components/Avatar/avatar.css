@@ -10,9 +10,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 2rem;
+}
+.avatar-caption {
   font-size: 1rem;
 }
-
 .avatar-sm {
   width: 2.4em;
   height: 2.4em;
