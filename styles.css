@@ -3,6 +3,8 @@
 @import url(./components/Alerts/alerts.css);
 @import url(./components/Cards/cards.css);
 
+@import url(./components/Badges/badges.css);
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 16px is assumed */
@@ -18,6 +20,7 @@ html {
   border-radius: 1.5rem;
   padding: 1.5rem;
   gap: 1.6rem;
+  max-width: 80vw;
 }
 
 .round-corner-sm {
@@ -41,6 +44,16 @@ main {
   grid-template-columns: 1fr 2fr;
   place-items: center;
 }
+
+ul{
+  max-width: 80vw;
+}
+
+li {
+  padding: 1rem;
+  width: 100%;
+}
+
 
 @media only screen and (max-width: 480px) {
   /* Mobile */
