@@ -125,7 +125,21 @@
   font-size: 1.9rem;
   background-color: white;
   color: var(--info-color);
-  right:0rem;
-  top:-0rem;
-  border-radius:0rem 0rem 0rem 0.5rem;
+  right: 0rem;
+  top: -0rem;
+  border-radius: 0rem 0.3rem 0rem 0.5rem;
+}
+
+/* Card Basic Text over Media*/
+
+.card-basic-text-over-media {
+  height: fit-content;
+}
+
+.card-pull-text-over-media {
+  margin-top: -6.6rem;
+}
+
+.white-text {
+  color: white;
 }
