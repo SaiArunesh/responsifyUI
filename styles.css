@@ -61,27 +61,27 @@ main {
 @media only screen and (min-width: 768px) {
   /* Phablet */
   html {
-    font-size: 80%;
+    font-size: 60%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   /* Laptop */
   html {
-    font-size: 100%; /*will be updated based on responsiveness requirements*/
+    font-size: 65%; /*will be updated based on responsiveness requirements*/
   }
 }
 
 @media only screen and (min-width: 1280px) {
   /* Desktop */
   html {
-    font-size: 100%; /*will be updated based on responsiveness requirements*/
+    font-size: 70%; /*will be updated based on responsiveness requirements*/
   }
 }
 
 @media only screen and (min-width: 1536px) {
   /* Humungosaur */
   html {
-    font-size: 100%; /*will be updated based on responsiveness requirements*/
+    font-size: 80%; /*will be updated based on responsiveness requirements*/
   }
 }
