@@ -1,6 +1,7 @@
 @import url(./components/Buttons/buttons.css);
 @import url(./components/Avatar/avatar.css);
 @import url(./components/Alerts/alerts.css);
+@import url(./components/Cards/cards.css);
 
 html {
   box-sizing: border-box;
@@ -44,7 +45,7 @@ main {
 @media only screen and (max-width: 480px) {
   /* Mobile */
   html {
-    font-size: 80%;
+    font-size: 50%;
   }
   h2 {
     display: none;

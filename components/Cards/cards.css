@@ -1,0 +1,118 @@
+/* Basic Card*/
+
+.card-basic {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 35rem;
+  height: fit-content;
+  margin: 2rem;
+  position: relative;
+  z-index: 0;
+}
+
+.card-ribbon::before {
+  position: absolute;
+  content: "";
+  background: var(--info-color);
+  height: 28px;
+  width: 28px;
+  top: 2rem;
+  right: -0.5rem;
+  transform: rotate(45deg);
+  z-index: -999999;
+}
+
+.card-ribbon::after {
+  position: absolute;
+  content: attr(badge-text);
+  top: 1rem;
+  right: -0.9rem;
+  padding: 0.5rem;
+  width: 10rem;
+  background: var(--info-color);
+  color: var(--lynxwhite-color);
+  text-align: center;
+}
+
+.card-image {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  height: 19.2rem;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
+.card-title {
+  padding: 1.6rem 0rem 0.8rem 1.6rem;
+}
+
+.card-title-header {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.card-title-author {
+  color: gray;
+}
+
+.card-desc {
+  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+  color: gray;
+  font-size: 1.4rem;
+}
+
+.card-footer {
+  margin-top: 0rem;
+  padding: 0rem 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-button {
+  text-transform: uppercase;
+  border: 0;
+  padding: 1rem 0.5rem;
+  color: #6200ee;
+  background-color: white;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+}
+
+.card-button:hover {
+  background-color: rgba(98, 0, 238, 0.05);
+  cursor: pointer;
+}
+
+.card-button:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.card-footer-icons {
+  display: flex;
+  margin-left: auto;
+  height: 100%;
+  align-items: center;
+}
+
+.card-footer-icons .btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  font-size: 2.4rem;
+  background-color: white;
+  color: black;
+}
+
+.card-footer-icons .btn-icon:hover {
+  background-color: #f8f4ec;
+  border-radius: 50%;
+}
