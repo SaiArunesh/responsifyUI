@@ -5,9 +5,11 @@
   justify-content: space-between;
   gap: 2rem;
   padding: 1rem;
-  max-width: 30rem;
+  min-width: 30rem;
+  max-width: 50rem;
   flex-wrap: wrap;
   color: var(--lynxwhite-color);
+  font-size: 1.6rem;
 }
 
 .alert-left,
@@ -21,7 +23,7 @@
 }
 
 .alert-icon{
-    font-size:1rem;
+    font-size:2rem;
 }
 
 .alert-info {
