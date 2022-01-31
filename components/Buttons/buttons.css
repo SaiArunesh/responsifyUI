@@ -1,0 +1,73 @@
+.btn {
+  border: 0;
+  padding: 0.5rem 1rem;
+  color: var(--lynxwhite-color);
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.btn-info {
+  background-color: var(--info-color);
+}
+
+.btn-success {
+  background-color: var(--success-color);
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: var(--highlight-color);
+}
+
+.btn-sm {
+  font-size: 1.2rem;
+  min-width: 2rem;
+  min-height: 3rem;
+}
+
+.btn-md {
+  font-size: 1.6rem;
+  min-width: 4rem;
+  min-height: 3rem;
+}
+
+.btn-lg {
+  font-size: 2rem;
+  min-width: 4rem;
+  min-height: 4rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+}
+
+.btn-link {
+  background-color: var(--info-color);
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  text-underline-offset: 0.2rem;
+}
+
+.btn-link-disabled {
+  pointer-events: none;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.btn-icon{
+  padding: 0.8rem;
+}

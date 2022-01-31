@@ -1,16 +1,6 @@
+@import url(./components/Buttons/buttons.css);
 @import url(./components/Avatar/avatar.css);
-
-:root {
-  --primary-color: #ff3b30;
-  --secondary-color: #fff6ea;
-  --action-color: #3b82f6;
-  --grey-color: #9a9a9a;
-  --black-color: #282828;
-  --white-color: #ffffff;
-  --lynxwhite-color: #f7f7f7;
-  --violet-color: #5348c7;
-  --lynxgray-color: #c5c5c5;
-}
+@import url(./components/Alerts/alerts.css);
 
 html {
   box-sizing: border-box;
@@ -23,10 +13,10 @@ html {
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 2rem;
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   border-radius: 1.5rem;
   padding: 1.5rem;
-  gap:1.6rem;
+  gap: 1.6rem;
 }
 
 .round-corner-sm {
@@ -47,11 +37,6 @@ html {
 
 main {
   display: grid;
-  grid-template-rows: 1fr 2fr;
-}
-
-main {
-  display: grid;
   grid-template-columns: 1fr 2fr;
   place-items: center;
 }
@@ -59,17 +44,16 @@ main {
 @media only screen and (max-width: 480px) {
   /* Mobile */
   html {
-    font-size: 50%;
+    font-size: 80%;
   }
-  main{
-    grid-template-columns: 1fr;
-
-  }
-  .side-grid {
+  h2 {
     display: none;
   }
-  .main-grid {
-    margin: 0 auto;
+  main {
+    grid-template-columns: 1fr;
+  }
+  .component-container {
+    flex-direction: column;
   }
 }
 
@@ -83,20 +67,20 @@ main {
 @media only screen and (min-width: 1024px) {
   /* Laptop */
   html {
-    font-size: 100%;
+    font-size: 100%; /*will be updated based on responsiveness requirements*/
   }
 }
 
 @media only screen and (min-width: 1280px) {
   /* Desktop */
   html {
-    font-size: 150%;
+    font-size: 100%; /*will be updated based on responsiveness requirements*/
   }
 }
 
 @media only screen and (min-width: 1536px) {
   /* Humungosaur */
   html {
-    font-size: 175%;
+    font-size: 100%; /*will be updated based on responsiveness requirements*/
   }
 }

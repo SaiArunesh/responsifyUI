@@ -1,0 +1,39 @@
+@import url(../globals.css);
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 30rem;
+  flex-wrap: wrap;
+  color: var(--lynxwhite-color);
+}
+
+.alert-left,
+.alert-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.alert-right {
+  margin-left: auto;
+}
+
+.alert-icon{
+    font-size:1rem;
+}
+
+.alert-info {
+  background-color: var(--info-color);
+}
+
+.alert-success {
+  background-color: var(--success-color);
+}
+.alert-warning {
+  background-color: var(--warning-color);
+}
+.alert-danger {
+  background-color: var(--danger-color);
+}
