@@ -1,0 +1,21 @@
+.snack-container {
+  position: fixed;
+  border-radius: 0.5rem;
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  gap:2rem;
+  bottom: 2rem;
+}
+
+.snack-leading {
+  left: 20px;
+}
+
+.snack-stacked {
+  flex-direction: column;
+}
+
+.snack-stacked > .snack-button-container {
+  align-self: flex-end;
+}
