@@ -26,3 +26,11 @@
   background-color: var(--warning-color);
   color:white;
 }
+
+.dark-shadow {
+  box-shadow: 0 0 10px black;
+}
+
+.light-shadow {
+  box-shadow: 0 0 10px var(--lynxwhite-color);
+}
