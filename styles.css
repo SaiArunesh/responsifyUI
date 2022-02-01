@@ -6,6 +6,7 @@
 @import url(./components/Cards/cards.css);
 @import url(./components/input/input.css);
 @import url(./components/lists/lists.css);
+@import url(./components/modal/modal.css);
 
 html {
   box-sizing: border-box;
