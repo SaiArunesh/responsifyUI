@@ -6,6 +6,7 @@ li {
   list-style-type: none;
   padding: 0;
   background-color: white;
+  width: 40rem;
 }
 
 .stacked-notification > li {
