@@ -1,10 +1,11 @@
-@import url(./components/typography/typography.css);
+@import url(./components/text-utils/text-utils.css);
 @import url(./components/Buttons/buttons.css);
 @import url(./components/Avatar/avatar.css);
 @import url(./components/Alerts/alerts.css);
 @import url(./components/Badges/badges.css);
 @import url(./components/Cards/cards.css);
-@import url(./components/text-utils/text-utils.css);
+@import url(./components/input/input.css);
+@import url(./components/lists/lists.css);
 
 html {
   box-sizing: border-box;
@@ -43,15 +44,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   place-items: center;
-}
-
-ul{
-  max-width: 80vw;
-}
-
-li {
-  padding: 1rem;
-  width: 100%;
 }
 
 .split-wrap{

@@ -1,0 +1,17 @@
+li {
+  padding: 1rem;
+}
+
+.stacked-notification {
+  list-style-type: none;
+  padding: 0;
+  background-color: white;
+}
+
+.stacked-notification > li {
+  border-bottom: 1px solid transparent;
+}
+
+.stacked-notification > li:last-child {
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}

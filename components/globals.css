@@ -1,14 +1,28 @@
 :root {
-    --danger-color: #ff3b30;
-    --info-color: #3b82f6;
-    --success-color:#17BEBB;
-    --warning-color:#F49F0A;
-    --grey-color: #9a9a9a;
-    --black-color: #282828;
-    --background-color: #fff6ea;
-    --white-color: #ffffff;
-    --lynxwhite-color: #f7f7f7;
-    --violet-color: #5348c7;
-    --lynxgray-color: #c5c5c5;
-  }
-  
+  --danger-color: #ff3b30;
+  --info-color: #3b82f6;
+  --success-color: #17bebb;
+  --warning-color: #f49f0a;
+  --grey-color: #9a9a9a;
+  --black-color: #282828;
+  --background-color: #fff6ea;
+  --white-color: #ffffff;
+  --lynxwhite-color: #f7f7f7;
+  --violet-color: #5348c7;
+  --lynxgray-color: #c5c5c5;
+}
+
+
+.black-text{
+  color:black;
+}
+
+.info-text{
+  background-color: var(--info-color);
+  color:white;
+}
+
+.warning-text{
+  background-color: var(--warning-color);
+  color:white;
+}
