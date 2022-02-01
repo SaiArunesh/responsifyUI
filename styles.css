@@ -62,9 +62,7 @@ html {
   html {
     font-size: 50%;
   }
-  h2 {
-    display: none;
-  }
+
   main.grid-1-2 {
     grid-template-columns: 1fr;
   }
