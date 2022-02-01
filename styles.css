@@ -1,9 +1,11 @@
+@import url(./components/text-utils/text-utils.css);
 @import url(./components/Buttons/buttons.css);
 @import url(./components/Avatar/avatar.css);
 @import url(./components/Alerts/alerts.css);
 @import url(./components/Badges/badges.css);
 @import url(./components/Cards/cards.css);
 @import url(./components/input/input.css);
+@import url(./components/lists/lists.css);
 
 html {
   box-sizing: border-box;
@@ -44,13 +46,12 @@ main {
   place-items: center;
 }
 
-ul{
-  max-width: 80vw;
-}
-
-li {
-  padding: 1rem;
-  width: 100%;
+.split-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap:2rem;
 }
 
 
