@@ -48,29 +48,81 @@ hideAllSnack();
 
 /* For Rating */
 
-// const ratingContainers = document.querySelectorAll(".rating-container");
+const ratingContainers = document.querySelectorAll(".rating-container");
+const stars = document.querySelectorAll(".star");
 
-// const stars = document.querySelectorAll(".star");
+const inActiveStarClasses = "fa fa-star-o star";
+const activeStarClasses = "fa fa-star star star-active";
+const hoverStarClasses = "fa fa-star star star-hover";
 
-// function ratingHover(event) {
-//   const parentRatingContainer = event.target.parentElement;
-//   const faStars = parentRatingContainer.querySelectorAll(".star");
+function findStarsIndex(starElement) {
+  const parentRatingContainer = starElement.parentElement;
+  const faStars = parentRatingContainer.querySelectorAll(".star");
+  let index = 0;
 
-//   faStars.forEach((faStar, index) => {
-//     faStar.classList.remove("fa-star-o");
-//     faStars.forEach((faStar, i) => {
-//       if (i <= index) faStar.classList.add("fa-star");
-//     });
-//   });
-// }
+  for (let star of faStars) {
+    if (starElement === star)
+      break;
+    index++;
+  }
 
-// function ratingClick(event) {
-//   console.log(event.target);
-// }
+  return [index, faStars];
+}
 
-// stars.forEach((star) => {
-//   console.log("1");
-//   star.addEventListener("mouseover", ratingHover);
-//   star.addEventListener("click", ratingClick);
-// });
+function ratingHover(event) {
+  let [index, faStars] = findStarsIndex(event.target);
 
+  for (let i = 0; i <= index; i++) {
+    if (faStars[i].className !== activeStarClasses)
+      faStars[i].className = hoverStarClasses;
+  }
+
+  index++;
+  for (let i = index; i < faStars.length; i++) {
+    if (faStars[i].className === hoverStarClasses) {
+      faStars[i].className = inActiveStarClasses;
+    }
+  }
+}
+
+function resetAllStarHover(event) {
+  const faStars = event.target.querySelectorAll(".star");
+  for (faStar of faStars) {
+    if (faStar.className !== activeStarClasses) {
+      faStar.className = inActiveStarClasses;
+    }
+  }
+}
+
+function ratingClick(event) {
+  let [index, faStars] = findStarsIndex(event.target);
+  for (let i = 0; i <= index; i++) {
+    faStars[i].className = activeStarClasses;
+  }
+  index++;
+
+  for (let i = index; i < faStars.length; i++) {
+    if (faStars[i].className === activeStarClasses) {
+      faStars[i].className = inActiveStarClasses;
+    }
+  }
+}
+
+function resetAllStars() {
+  const parentRatingContainer = event.target.parentElement;
+  const faStars = parentRatingContainer.querySelectorAll(".star");
+  for (let star of faStars) {
+    star.className = inActiveStarClasses;
+  }
+}
+
+stars.forEach((star) => {
+  star.addEventListener("mouseover", ratingHover);
+  star.addEventListener("click", ratingClick);
+  star.addEventListener("dblclick", resetAllStars);
+
+});
+
+ratingContainers.forEach((ratingContainer) =>
+  ratingContainer.addEventListener("mouseleave", resetAllStarHover)
+)

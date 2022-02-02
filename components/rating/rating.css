@@ -1,8 +1,25 @@
+@import url("../globals.css");
+.rating-container{
+  display: flex;
+  gap:-1px;
+}
+
+.rating-container>.star{
+  margin-left:-3px;
+}
+
 .rating-container > .fa-star-o {
-    color: #fde047;
-  }
-  
-  .rating-container > .fa-star {
-    color: #eab308;
-  }
-  
+  color: #f2de7a;
+}
+
+.rating-container > .star-hover {
+  color: #f2de7a;
+}
+
+.rating-container > .star-active {
+  color: var(--warning-color);
+}
+
+
+
+
