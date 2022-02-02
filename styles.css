@@ -7,6 +7,8 @@
 @import url(./components/input/input.css);
 @import url(./components/lists/lists.css);
 @import url(./components/snackbar/snackbar.css);
+@import url(./components/simplified-grid/simplified-grid.css);
+
 
 html {
   box-sizing: border-box;
@@ -41,7 +43,7 @@ html {
   border-radius: 50%;
 }
 
-main {
+.grid-1-2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   place-items: center;
@@ -61,10 +63,8 @@ main {
   html {
     font-size: 50%;
   }
-  h2 {
-    display: none;
-  }
-  main {
+
+  main.grid-1-2 {
     grid-template-columns: 1fr;
   }
   .component-container {
