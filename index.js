@@ -45,3 +45,32 @@ snackBtnClose.forEach((closeBtn) =>
 );
 
 hideAllSnack();
+
+/* For Rating */
+
+// const ratingContainers = document.querySelectorAll(".rating-container");
+
+// const stars = document.querySelectorAll(".star");
+
+// function ratingHover(event) {
+//   const parentRatingContainer = event.target.parentElement;
+//   const faStars = parentRatingContainer.querySelectorAll(".star");
+
+//   faStars.forEach((faStar, index) => {
+//     faStar.classList.remove("fa-star-o");
+//     faStars.forEach((faStar, i) => {
+//       if (i <= index) faStar.classList.add("fa-star");
+//     });
+//   });
+// }
+
+// function ratingClick(event) {
+//   console.log(event.target);
+// }
+
+// stars.forEach((star) => {
+//   console.log("1");
+//   star.addEventListener("mouseover", ratingHover);
+//   star.addEventListener("click", ratingClick);
+// });
+
