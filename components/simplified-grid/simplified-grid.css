@@ -1,0 +1,23 @@
+.grid-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-items: center;
+}
+
+.grid-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.grid-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.grid-border,
+.grid-border > * {
+  width: 100%;
+  outline: 1px solid red;
+}
