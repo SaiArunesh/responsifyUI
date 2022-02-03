@@ -8,18 +8,10 @@
   margin-left:-3px;
 }
 
-.rating-container > .fa-star-o {
-  color: #f2de7a;
-}
-
-.rating-container > .star-hover {
-  color: #f2de7a;
+.rating-container > .fa-star-o, .star-hover {
+  color: var(--inactive-star-color);
 }
 
 .rating-container > .star-active {
   color: var(--warning-color);
 }
-
-
-
-
