@@ -33,9 +33,9 @@
   position: sticky;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  top: 10rem;
+  top: 7rem;
   height: 90vh;
+  overflow: scroll;
 }
 
 .nav-hamburger {
