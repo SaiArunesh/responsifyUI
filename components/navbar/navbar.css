@@ -5,10 +5,10 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap:2rem;
+  gap: 2rem;
   min-height: 7.4rem;
   max-height: 25vh;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   background-color: black;
   position: sticky;
@@ -32,6 +32,9 @@
 
 .side-nav {
   position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   top: 10rem;
-  height: fit-content;
+  height: 90vh;
 }
