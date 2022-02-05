@@ -69,12 +69,16 @@ main {
   html {
     font-size: 25%;
   }
+  .nav-bar-top {
+    font-size: 0.6rem;
+  }
 }
 
 @media only screen and (min-width: 250px) {
   html {
     font-size: 35%;
   }
+   
 }
 
 @media only screen and (min-width: 350px) {
@@ -99,9 +103,29 @@ main {
     grid-template-columns: 1fr;
     place-items: center;
   }
+
   .component-container {
     flex-direction: column;
   }
+
+  .nav-bar-top {
+    flex-wrap: wrap;
+  }
+
+  .nav-bar-top >  .nav-item-left {
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .nav-hamburger{
+    display: block;
+  }
+
+  .nav-bar-top > .nav-item-center,
+  .nav-item-right {
+    display: none;
+  }
+
   .side-nav {
     display: none;
   }
@@ -110,7 +134,7 @@ main {
 @media only screen and (min-width: 640px) {
   /* Phablet */
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
 }
 
