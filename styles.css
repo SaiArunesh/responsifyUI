@@ -65,23 +65,28 @@ main {
   position: relative;
   height: fit-content;
 }
-
 @media only screen and (min-width: 50px) {
   html {
     font-size: 25%;
   }
 }
 
+@media only screen and (min-width: 250px) {
+  html {
+    font-size: 35%;
+  }
+}
+
 @media only screen and (min-width: 350px) {
   html {
-    font-size: 30%;
+    font-size: 50%;
   }
 }
 
 @media only screen and (min-width: 480px) {
   /* Mobile */
   html {
-    font-size: 40%;
+    font-size: 62.5%;
   }
   .card-basic {
     font-size: 1rem;
