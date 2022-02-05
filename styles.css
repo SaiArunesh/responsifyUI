@@ -136,12 +136,16 @@ main {
   html {
     font-size: 45%;
   }
+  
 }
 
 @media only screen and (min-width: 768px) {
   /* Phablet */
   html {
     font-size: 45%;
+  }
+  .side-nav {
+    display: flex;
   }
 }
 
