@@ -68,20 +68,20 @@ main {
 
 @media only screen and (min-width: 50px) {
   html {
-    font-size: 20%;
+    font-size: 25%;
   }
 }
 
 @media only screen and (min-width: 350px) {
   html {
-    font-size: 25%;
+    font-size: 30%;
   }
 }
 
 @media only screen and (min-width: 480px) {
   /* Mobile */
   html {
-    font-size: 30%;
+    font-size: 40%;
   }
   .card-basic {
     font-size: 1rem;
@@ -105,34 +105,34 @@ main {
 @media only screen and (min-width: 640px) {
   /* Phablet */
   html {
-    font-size: 35%;
+    font-size: 50%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   /* Phablet */
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   /* Laptop */
   html {
-    font-size: 62.5%; /*will be updated based on responsiveness requirements*/
+    font-size: 50%; /*will be updated based on responsiveness requirements*/
   }
 }
 
 @media only screen and (min-width: 1280px) {
   /* Desktop */
   html {
-    font-size: 70%; /*will be updated based on responsiveness requirements*/
+    font-size: 55%; /*will be updated based on responsiveness requirements*/
   }
 }
 
 @media only screen and (min-width: 1536px) {
   /* Humungosaur */
   html {
-    font-size: 100%; /*will be updated based on responsiveness requirements*/
+    font-size: 62.5%; /*will be updated based on responsiveness requirements*/
   }
 }
