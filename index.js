@@ -45,3 +45,9 @@ snackBtnClose.forEach((closeBtn) =>
 );
 
 hideAllSnack();
+
+/* Componesation for fixed header navigation */
+
+var shiftWindow = function () { scrollBy(0, -50) };
+if (location.hash) shiftWindow();
+window.addEventListener("hashchange", shiftWindow);

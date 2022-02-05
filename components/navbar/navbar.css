@@ -1,0 +1,34 @@
+@import url(../globals.css);
+
+.nav-bar-top {
+  display: flex;
+  align-items: center;
+  height: 7.4rem;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  position: sticky;
+}
+
+.nav-item-left,
+.nav-item-right,
+.nav-item-center {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-search-bar,
+.nav-search-bar > input {
+  max-width: 50rem;
+  min-width: 30rem;
+}
+
+.side-nav {
+  position: sticky;
+  top: 10rem;
+  height: fit-content;
+}

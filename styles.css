@@ -9,11 +9,17 @@
 @import url(./components/snackbar/snackbar.css);
 @import url(./components/simplified-grid/simplified-grid.css);
 @import url(./components/modal/modal.css);
+@import url(./components/navbar/navbar.css);
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%; /* 16px is assumed */
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
 }
 
 .component-container {
@@ -25,6 +31,7 @@ html {
   border-radius: 1.5rem;
   padding: 1.5rem;
   gap: 1.6rem;
+  max-width: 90vw;
 }
 
 .round-corner-sm {
@@ -43,46 +50,68 @@ html {
   border-radius: 50%;
 }
 
-.grid-1-2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  place-items: center;
-}
-
-.split-wrap{
+.split-wrap {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap:2rem;
+  gap: 2rem;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 30rem auto;
+  position: relative;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 230px) {
+  html {
+    font-size: 10%;
+  }
+}
 
 @media only screen and (max-width: 480px) {
   /* Mobile */
   html {
     font-size: 50%;
   }
+ 
+}
 
-  main.grid-1-2 {
+@media only screen and (max-width: 640px) {
+  /* Mobile */
+  main {
     grid-template-columns: 1fr;
+    place-items: center;
   }
   .component-container {
     flex-direction: column;
   }
+  .side-nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* Phablet */
+  html {
+    font-size: 35%;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
   /* Phablet */
   html {
-    font-size: 60%;
+    font-size: 50%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   /* Laptop */
   html {
-    font-size: 65%; /*will be updated based on responsiveness requirements*/
+    font-size: 62.5%; /*will be updated based on responsiveness requirements*/
   }
 }
 
@@ -96,6 +125,6 @@ html {
 @media only screen and (min-width: 1536px) {
   /* Humungosaur */
   html {
-    font-size: 62.5%; /*will be updated based on responsiveness requirements*/
+    font-size: 100%; /*will be updated based on responsiveness requirements*/
   }
 }
