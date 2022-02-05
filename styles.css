@@ -25,6 +25,7 @@ body {
 .component-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   margin: 2rem;
   background-color: var(--background-color);
@@ -65,18 +66,26 @@ main {
   height: fit-content;
 }
 
-@media only screen and (max-width: 230px) {
+@media only screen and (min-width: 50px) {
   html {
-    font-size: 10%;
+    font-size: 20%;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 350px) {
+  html {
+    font-size: 25%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
   /* Mobile */
   html {
-    font-size: 50%;
+    font-size: 30%;
   }
- 
+  .card-basic {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -98,7 +107,6 @@ main {
   html {
     font-size: 35%;
   }
-
 }
 
 @media only screen and (min-width: 768px) {

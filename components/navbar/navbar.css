@@ -3,14 +3,17 @@
 .nav-bar-top {
   display: flex;
   align-items: center;
-  height: 7.4rem;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap:2rem;
+  min-height: 7.4rem;
+  max-height: 25vh;
+  width: 100vw;
   margin: 0 auto;
   background-color: black;
   position: sticky;
   top: 0;
   z-index: 1;
-  position: sticky;
 }
 
 .nav-item-left,
