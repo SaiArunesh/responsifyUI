@@ -55,7 +55,6 @@ window.addEventListener("hashchange", shiftWindow);
 /* For Side Nav on small width screens */
 
 function toggleSideNavBar() {
-  console.log("asdasd")
   if (sideNav.classList.contains("fixed-side-nav")) {
     sideNav.style.display = "none";
     sideNav.classList.remove("fixed-side-nav");

@@ -66,7 +66,17 @@ main {
   position: relative;
   height: fit-content;
 }
+
 @media only screen and (min-width: 50px) {
+  html {
+    font-size: 15%;
+  }
+  .nav-bar-top {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 173px) {
   html {
     font-size: 25%;
   }
