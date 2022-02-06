@@ -66,7 +66,9 @@ function toggleSideNavBar() {
   }
 }
 
-window.addEventListener("resize", () => sideNav.style.removeProperty("display"));
+window.addEventListener("resize", () => {
+  sideNav.style.removeProperty("display"); sideNav.classList.remove("fixed-side-nav");
+});
 
 const navHamburger = document.getElementById("navHamburger");
 const sideNav = document.getElementById("sideNav");
