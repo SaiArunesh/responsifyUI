@@ -27,7 +27,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2rem;
+  margin:0rem 0.5rem 2rem 0rem;
   background-color: var(--background-color);
   border-radius: 1.5rem;
   padding: 1.5rem;
