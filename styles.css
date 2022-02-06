@@ -62,7 +62,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 30rem auto;
+  grid-template-columns: 35rem auto;
   position: relative;
   height: fit-content;
 }

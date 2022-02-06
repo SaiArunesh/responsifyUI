@@ -35,7 +35,8 @@
   flex-direction: column;
   top: 7rem;
   height: 90vh;
-  left:1rem;
+  padding-left: 1rem;
+  overflow-y: scroll;
 }
 
 .fixed-side-nav {
@@ -44,10 +45,14 @@
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999999;
   width: 100%;
-  height: auto;
+  height: 100%;
+  align-items: center;
 }
-.fixed-side-nav > * {
+
+.fixed-side-nav > a {
   color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid white;
 }
 
 .nav-hamburger {
