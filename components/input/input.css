@@ -35,8 +35,8 @@ input:focus {
 .input-status {
   position: absolute;
   font-size: 1.6rem;
-  right: 4rem;
-  top: 1.5rem;
+  right: 2rem;
+  top: 1.35rem;
 }
 
 .input-status-valid {

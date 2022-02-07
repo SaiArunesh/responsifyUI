@@ -66,8 +66,8 @@ function toggleSideNavBar() {
 }
 
 window.addEventListener("resize", () => {
-  sideNav.style.display = "none";
-  mainSec.style.display = "block";
+  sideNav.style.removeProperty("display");
+  mainSec.style.visibility = "visible";
 });
 
 const navHamburger = document.getElementById("navHamburger");
