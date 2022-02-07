@@ -19,22 +19,37 @@ html {
 
 body {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   border: 0;
+  max-width: 80vw;
 }
 
 .component-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin:0rem 0.5rem 2rem 0rem;
-  background-color: var(--background-color);
+  margin: 0rem 0.5rem 2rem 0rem;
+  background-color: var(--white-color);
   border-radius: 1.5rem;
   padding: 1.5rem;
   gap: 1.6rem;
   max-width: 90vw;
   overflow: auto;
+  border-bottom: 1px solid var(--lynxwhite-color);
+}
+
+.component-container-title {
+  align-self: flex-start;
+  flex: 1 1 auto;
+}
+
+.component-container-contents {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap:1rem;
 }
 
 .round-corner-sm {
@@ -90,7 +105,6 @@ main {
   html {
     font-size: 35%;
   }
-   
 }
 
 @media only screen and (min-width: 350px) {
@@ -111,6 +125,10 @@ main {
 
 @media only screen and (max-width: 640px) {
   /* Mobile */
+  body {
+    max-width: initial;
+    margin: initial;
+  }
   main {
     grid-template-columns: 1fr;
     place-items: center;
@@ -124,12 +142,12 @@ main {
     flex-wrap: wrap;
   }
 
-  .nav-bar-top >  .nav-item-left {
+  .nav-bar-top > .nav-item-left {
     flex-grow: 1;
     justify-content: center;
   }
 
-  .nav-hamburger{
+  .nav-hamburger {
     display: block;
   }
 
@@ -148,7 +166,6 @@ main {
   html {
     font-size: 45%;
   }
-  
 }
 
 @media only screen and (min-width: 768px) {
