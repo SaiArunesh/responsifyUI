@@ -48,29 +48,31 @@ hideAllSnack();
 
 /* Componesation for fixed header navigation */
 
-const shiftWindow =  ()=> scrollBy(0, -50);
+const shiftWindow = () => scrollBy(0, -50);
 
 window.addEventListener("hashchange", shiftWindow);
 
 /* For Side Nav on small width screens */
 
 function toggleSideNavBar() {
-  if (sideNav.classList.contains("fixed-side-nav")) {
+  if (sideNav.style.display !== "none") {
     sideNav.style.display = "none";
-    sideNav.classList.remove("fixed-side-nav");
+    mainSec.style.visibility = "visible";
   }
   else {
     sideNav.style.display = "flex";
-    sideNav.classList.add("fixed-side-nav");
+    mainSec.style.visibility = "hidden";
   }
 }
 
 window.addEventListener("resize", () => {
-  sideNav.style.removeProperty("display"); sideNav.classList.remove("fixed-side-nav");
+  sideNav.style.display = "none";
+  mainSec.style.display = "block";
 });
 
 const navHamburger = document.getElementById("navHamburger");
 const sideNav = document.getElementById("sideNav");
+const mainSec = document.querySelector(".main-section");
 navHamburger.addEventListener("click", toggleSideNavBar)
 
 /* For Rating */

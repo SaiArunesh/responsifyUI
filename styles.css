@@ -49,7 +49,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  gap:1rem;
+  gap: 1rem;
 }
 
 .round-corner-sm {
@@ -158,6 +158,12 @@ main {
 
   .side-nav {
     display: none;
+  }
+  
+  .side-nav::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 

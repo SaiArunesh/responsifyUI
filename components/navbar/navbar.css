@@ -40,7 +40,6 @@
   padding-left: 1rem;
   overflow-y: auto;
   color: #2d3748;
-  border-right:1px solid var(--lynxwhite-color);
 }
 
 .fixed-side-nav {
