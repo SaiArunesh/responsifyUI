@@ -57,7 +57,8 @@ h5,
   text-align: center;
 }
 
-a{
+a {
+  text-decoration:none;
   text-underline-offset: 1rem;
-    color: inherit;
+  color: inherit;
 }
