@@ -48,8 +48,8 @@ hideAllSnack();
 
 /* Componesation for fixed header navigation */
 
-var shiftWindow = function () { scrollBy(0, -50) };
-if (location.hash) shiftWindow();
+const shiftWindow =  ()=> scrollBy(0, -50);
+
 window.addEventListener("hashchange", shiftWindow);
 
 /* For Side Nav on small width screens */
