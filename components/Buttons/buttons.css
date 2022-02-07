@@ -2,9 +2,10 @@
   border: 0;
   padding: 0.5rem 1rem;
   color: var(--lynxwhite-color);
-  font-weight: 700;
   cursor: pointer;
   border-radius: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
 }
 
 .btn-info {
@@ -29,19 +30,17 @@
 }
 
 .btn-sm {
-  font-size: 1.2rem;
   min-width: 2rem;
   min-height: 3rem;
 }
 
 .btn-md {
-  font-size: 1.6rem;
   min-width: 4rem;
   min-height: 3rem;
 }
 
 .btn-lg {
-  font-size: 2rem;
+ 
   min-width: 4rem;
   min-height: 4rem;
 }
@@ -68,6 +67,6 @@
   opacity: 0.5;
 }
 
-.btn-icon{
+.btn-icon {
   padding: 0.8rem;
 }

@@ -17,7 +17,8 @@ h3,
 }
 
 h4,
-.normal-text {
+.normal-text,
+button.normal-text {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
@@ -27,7 +28,6 @@ h5,
   font-size: 0.8rem;
   line-height: 1.6rem;
 }
-
 
 .light-text {
   font-weight: 300;
@@ -49,10 +49,10 @@ h5,
   font-weight: 900;
 }
 
-.gray-text{
-    color: var(--lynxgray-color);
+.gray-text {
+  color: var(--lynxgray-color);
 }
 
-.center-text{
-    text-align: center;
+.center-text {
+  text-align: center;
 }

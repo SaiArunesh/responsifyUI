@@ -3,6 +3,7 @@ input {
   border: 0;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
+  max-width:65%;
 }
 
 input::placeholder {
@@ -28,12 +29,13 @@ input:focus {
 
 .input-with-status-icon {
   position: relative;
+  max-width:65%;
 }
 
 .input-status {
   position: absolute;
   font-size: 1.6rem;
-  right: 0.5rem;
+  right: 4rem;
   top: 1rem;
 }
 
