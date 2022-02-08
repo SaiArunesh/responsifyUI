@@ -191,20 +191,20 @@ iframe {
 @media only screen and (min-width: 1024px) {
   /* Laptop */
   html {
-    font-size: 50%; /*will be updated based on responsiveness requirements*/
+    font-size: 50%; 
   }
 }
 
 @media only screen and (min-width: 1280px) {
   /* Desktop */
   html {
-    font-size: 55%; /*will be updated based on responsiveness requirements*/
+    font-size: 55%;
   }
 }
 
 @media only screen and (min-width: 1536px) {
   /* Humungosaur */
   html {
-    font-size: 62.5%; /*will be updated based on responsiveness requirements*/
+    font-size: 62.5%; 
   }
 }
