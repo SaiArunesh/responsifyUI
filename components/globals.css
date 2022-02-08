@@ -1,8 +1,8 @@
 :root {
   --danger-color: #ff3b30;
   --info-color: #3b82f6;
-  --success-color: #17bebb;
-  --warning-color: #f49f0a;
+  --success-color: #4BB543 ;
+  --warning-color: #F79824;
   --grey-color: #9a9a9a;
   --black-color: #282828;
   --background-color: #fff6ea;
@@ -13,19 +13,18 @@
   --inactive-star-color: #f2de7a;
 }
 
-
-.black-text{
-  color:black;
+.black-text {
+  color: black;
 }
 
-.info-text{
+.info-text {
   background-color: var(--info-color);
-  color:white;
+  color: white;
 }
 
-.warning-text{
+.warning-text {
   background-color: var(--warning-color);
-  color:white;
+  color: white;
 }
 
 .dark-shadow {
@@ -34,4 +33,8 @@
 
 .light-shadow {
   box-shadow: 0 0 10px var(--lynxwhite-color);
+}
+
+.border-2 {
+  border: 2px solid var(--lynxwhite-color);
 }

@@ -56,3 +56,9 @@ h5,
 .center-text {
   text-align: center;
 }
+
+a {
+  text-decoration:none;
+  text-underline-offset: 1rem;
+  color: inherit;
+}

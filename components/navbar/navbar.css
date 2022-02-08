@@ -9,7 +9,8 @@
   max-height: 25vh;
   width: 100%;
   margin: 0 auto;
-  background-color: black;
+  border-bottom: 1px solid var(--lynxwhite-color);
+  background-color: white;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -33,10 +34,12 @@
   position: sticky;
   display: flex;
   flex-direction: column;
-  top: 7rem;
-  height: 100%;
+  top: 10rem;
+  height: 90vh;
   max-height: 100vh;
   padding-left: 1rem;
+  overflow-y: auto;
+  color: #2d3748;
 }
 
 .fixed-side-nav {

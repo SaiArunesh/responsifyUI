@@ -73,28 +73,6 @@
   align-items: center;
 }
 
-.card-button {
-  text-transform: uppercase;
-  border: 0;
-  padding: 1rem 0.5rem;
-  color: var(--info-color);
-  background-color: white;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  border-radius: 1rem;
-  font-size: 1.4rem;
-}
-
-.card-button:hover {
-  background-color: var(--info-color);
-  color: white;
-  cursor: pointer;
-}
-
-.card-button:not(:first-child) {
-  margin-left: 0.5rem;
-}
-
 .card-footer-icons {
   display: flex;
   margin-left: auto;

@@ -40,7 +40,6 @@
 }
 
 .btn-lg {
- 
   min-width: 4rem;
   min-height: 4rem;
 }
@@ -68,5 +67,27 @@
 }
 
 .btn-icon {
-  padding: 0.8rem;
+  padding: 1rem;
+}
+
+.card-btn {
+  text-transform: uppercase;
+  border: 0;
+  padding: 1rem 0.5rem;
+  color: var(--info-color);
+  background-color: white;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+}
+
+.card-btn:hover {
+  background-color: rgba(59, 130, 246, 0.9);
+  color: white;
+  cursor: pointer;
+}
+
+.card-btn:not(:first-child) {
+  margin-left: 0.5rem;
 }
