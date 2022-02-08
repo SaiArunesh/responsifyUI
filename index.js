@@ -54,7 +54,7 @@ window.addEventListener("hashchange", shiftWindow);
 
 /* For Side Nav on small width screens */
 
-function toggleSideNavBar() {
+const toggleSideNavBar = () => {
   if (sideNav.style.display !== "none") {
     sideNav.style.display = "none";
     mainSec.style.visibility = "visible";
@@ -65,15 +65,17 @@ function toggleSideNavBar() {
   }
 }
 
-window.addEventListener("resize", () => {
+const resetSideNav = () => {
   sideNav.style.removeProperty("display");
   mainSec.style.visibility = "visible";
-});
+}
+window.addEventListener("resize", resetSideNav);
 
 const navHamburger = document.getElementById("navHamburger");
 const sideNav = document.getElementById("sideNav");
 const mainSec = document.querySelector(".main-section");
 navHamburger.addEventListener("click", toggleSideNavBar)
+sideNav.addEventListener("click", resetSideNav);
 
 /* For Rating */
 

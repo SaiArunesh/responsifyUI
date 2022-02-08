@@ -83,6 +83,11 @@ main {
   height: fit-content;
 }
 
+iframe {
+  width: 100%;
+  border: 0;
+}
+
 @media only screen and (min-width: 50px) {
   html {
     font-size: 15%;
