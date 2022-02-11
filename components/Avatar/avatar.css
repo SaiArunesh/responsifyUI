@@ -24,7 +24,24 @@
   width: 3.2em;
   height: 3.2em;
 }
+
 .avatar-lg {
   width: 4.8em;
   height: 4.8em;
+}
+
+.round-corner-sm {
+  border-radius: 0.5em;
+}
+
+.round-corner-md {
+  border-radius: 1em;
+}
+
+.round-corner-lg {
+  border-radius: 1.5em;
+}
+
+.round {
+  border-radius: 50%;
 }
