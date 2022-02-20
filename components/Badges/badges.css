@@ -17,9 +17,11 @@
   opacity: 0.6;
   cursor: pointer;
 }
+
 .badge:hover {
   opacity: 1;
 }
+
 .badge-sm {
   font-size: 1rem;
   padding: 0.2rem;
