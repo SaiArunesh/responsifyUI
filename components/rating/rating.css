@@ -15,3 +15,7 @@
 .rating-container > .star-active {
   color: var(--warning-color);
 }
+
+.star-green{
+  color:var(--success-color);
+}

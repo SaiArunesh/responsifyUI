@@ -1,9 +1,9 @@
 @import url("../globals.css");
 input {
-  border: 0;
+  border: 1px solid var(--info-color);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
-  max-width:65%;
+  max-width: 65%;
 }
 
 input::placeholder {
@@ -29,7 +29,7 @@ input:focus {
 
 .input-with-status-icon {
   position: relative;
-  max-width:65%;
+  max-width: 65%;
 }
 
 .input-status {
@@ -47,7 +47,8 @@ input:focus {
   color: var(--danger-color);
 }
 
-.input-resizable { /*Expands to width specified*/
+.input-resizable {
+  /*Expands to width specified*/
   width: 30rem;
   max-width: 95%;
 }
@@ -56,4 +57,16 @@ input:focus {
   box-sizing: border-box;
   max-width: inherit;
   width: 100%;
+}
+
+.slider {
+  padding: initial;
+  border-radius: initial;
+  max-width: initial;
+  background: #d3d3d3;
+}
+
+.slider-caption {
+  display: flex;
+  justify-content: space-between;
 }

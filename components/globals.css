@@ -1,8 +1,8 @@
 :root {
   --danger-color: #ff3b30;
   --info-color: #3b82f6;
-  --success-color: #4BB543 ;
-  --warning-color: #F79824;
+  --success-color: #4bb543;
+  --warning-color: #f79824;
   --grey-color: #9a9a9a;
   --black-color: #282828;
   --background-color: #fff6ea;
@@ -18,8 +18,7 @@
 }
 
 .info-text {
-  background-color: var(--info-color);
-  color: white;
+  color: var(--info-color);
 }
 
 .warning-text {
@@ -37,4 +36,8 @@
 
 .border-2 {
   border: 2px solid var(--lynxwhite-color);
+}
+
+.violet-text {
+  color: var(--violet-color);
 }

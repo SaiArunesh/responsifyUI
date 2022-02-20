@@ -12,6 +12,10 @@
   background-color: var(--info-color);
 }
 
+.btn-primary {
+  background-color: var(--violet-color);
+}
+
 .btn-success {
   background-color: var(--success-color);
 }
@@ -53,10 +57,8 @@
 }
 
 .btn-link {
-  background-color: var(--info-color);
-  text-decoration: underline;
-  display: flex;
-  justify-content: center;
+  color: var(--black-color);
+  text-decoration: none;
   text-underline-offset: 0.2rem;
 }
 
@@ -77,9 +79,8 @@
   color: var(--info-color);
   background-color: white;
   font-weight: 700;
-  letter-spacing: 0.2rem;
   border-radius: 1rem;
-  font-size: 1.4rem;
+  font-size: 1=1.2rem;
 }
 
 .card-btn:hover {
@@ -90,4 +91,30 @@
 
 .card-btn:not(:first-child) {
   margin-left: 0.5rem;
+}
+
+.btn-wide {
+  width: 80%;
+}
+
+.btn-add-cart {
+  text-decoration: none;
+}
+
+.btn-buy {
+  background-color: var(--info-color);
+  color: var(--lynxwhite-color);
+  padding: 1rem 0;
+  flex: 1 1 10rem;
+  border-radius: initial;
+  font-size: 1.4rem;
+}
+
+.btn-wish {
+  background-color: var(--warning-color);
+  color: var(--lynxwhite-color);
+  flex: 1 1 10rem;
+  padding: 1ren 0;
+  border-radius: initial;
+  font-size: 1.4rem;
 }
